@@ -1,0 +1,344 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+input, select, textarea {
+    border: 0;
+    border-color: transparent;
+    outline: none;
+    overflow: auto;
+}
+
+@font-face {
+    font-family: 'Jua';
+    src: url('../Asset/Fonts/Jua/Jua-Regular.ttf') format('truetype');
+}
+
+.member-body {
+    background-color: #fff5e1;
+    width: 100%;
+    padding: 2vh 6vw 0.5vh 0;
+    display: flex;
+    flex-direction: row;
+    gap: 0;
+}
+
+.member-title {
+    width: 20%;
+    font-family: 'Jua';
+    font-weight: bold;
+    font-size: 2vw;
+    margin-top: 5vh;
+    margin-left: 6vw;
+    margin-right: 0;
+    margin-bottom: 0.2vh;
+}
+
+.member-form {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+    margin: 6vh 4vw 3vh 10vw;
+    padding: 0 0 0 15vw;
+}
+
+.member-input {
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+}
+
+.member-input label, .member-input input, .member-input select, .member-input textarea {
+    font-family: 'Jua';
+    font-weight: bold;
+    font-size: 1.5vw;
+}
+
+.member-input input, .member-input select, .member-input textarea {
+    width: 100%;
+    border-radius: 15px;
+    padding: 0.5vh 1vw;
+}
+
+.member-input textarea {
+    height: 10vh;
+}
+
+.member-warning p {
+    width: 100%;
+    text-align: justify;
+    font-family: 'Jua';
+    font-weight: normal;
+    font-size: 2.25vw;
+    margin-top: 1.5vh;
+    margin-bottom: 1vh;
+}
+
+.member-input-check {
+    display: flex;
+    flex-direction: row;
+    gap: 2vw;
+}
+
+.member-input-check input[type="checkbox"] {
+    width: 2vw;
+    height: auto;
+    margin-bottom: 6vh;
+}
+
+.member-input-check label {
+    width: 100%;
+    text-align: justify;
+    font-family: 'Jua';
+    font-weight: normal;
+    font-size: 2vw;
+}
+
+.certain-term {
+    color: #254cd6;
+}
+
+.member-input input[type=submit] {
+    width: -moz-fit-content;
+    width: fit-content;
+    padding: 2vh 5vw;
+    margin-top: 0.25vh;
+    margin-left: 14.5vw;
+    background-color: #0085ff;
+    color: white;
+    border: 0;
+    border-radius: 25px;
+    font-weight: normal;
+}
+
+.member-input input[type=submit]:hover {
+    background-color: #254cd6;
+}
+
+.submit-result {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Jua';
+    font-size: 1.8vw;
+    font-weight: bold;
+    padding-left: 5.7vw;
+}
+
+.submit-errors {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.2vh;
+    padding-left: 3.2vw;
+}
+
+.submit-errors p {
+    text-align: center;
+    font-family: 'Jua';
+    font-size: 1.2vw;
+    font-weight: normal;
+    color: black;
+    padding-left: 2vw;
+}
+
+@media only screen and (min-width: 481px) and (max-width: 800px) {
+    .member-body {
+        width: 100%;
+        padding: 2vh 5vw 0.5vh 1.5vw;
+        display: flex;
+        flex-direction: column;
+        gap: 0.8vh;
+    }
+    
+    .member-title {
+        font-size: 2.5vw;
+        margin-top: 4.5vh;
+        margin-left: 5.8vw;
+        margin-bottom: 0.2vh;
+    }
+    
+    .member-form {
+        display: flex;
+        flex-direction: column;
+        gap: 4vh;
+        margin: 1.5vh 0 2vh 5.8vw;
+        padding: 0;
+    }
+    
+    .member-input {
+        display: flex;
+        flex-direction: column;
+        gap: 0.8vh;
+    }
+    
+    .member-input label, .member-input input, .member-input select, .member-input textarea {
+        font-size: 2.4vw;
+    }
+    
+    .member-input input, .member-input select, .member-input textarea {
+        width: 100%;
+        border-radius: 15px;
+        padding: 1vh 2vw;
+    }
+    
+    .member-input textarea {
+        height: 10vh;
+    }
+    
+    .member-warning p {
+        width: 100%;
+        font-size: 2.8vw;
+        margin-top: 1.5vh;
+        margin-bottom: 1.2vh;
+    }
+    
+    .member-input-check {
+        display: flex;
+        flex-direction: row;
+        gap: 1.2vw;
+    }
+    
+    .member-input-check input[type="checkbox"] {
+        width: 2vw;
+        height: auto;
+        margin-top: 0.5vh;
+    }
+    
+    .member-input-check label {
+        width: 100%;
+        font-size: 2.5vw;
+        height: auto;
+    }
+    
+    .member-input input[type=submit] {
+        width: -moz-fit-content;
+        width: fit-content;
+        padding: 1vh 6vw;
+        margin-top: 0.25vh;
+        margin-left: 23.5vw;
+        border: 0;
+        border-radius: 25px;
+        font-weight: normal;
+    }
+    
+    .submit-result {
+        font-size: 2.2vw;
+        padding-left: 1vw;
+    }
+    
+    .submit-errors {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1vh;
+        padding-left: 0;
+        padding-right: 2vw;
+    }
+    
+    .submit-errors p {
+        font-size: 2vw;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .member-body {
+        width: 100%;
+        padding: 1vh 0.5vw 0.5vh 0.5vw;
+        display: flex;
+        flex-direction: column;
+        gap: 1vh;
+    }
+    
+    .member-title {
+        font-size: 3vw;
+        margin-top: 3.5vh;
+        margin-left: 8vw;
+        margin-bottom: 0.2vh;
+    }
+    
+    .member-form {
+        display: flex;
+        flex-direction: column;
+        gap: 2.2vh;
+        margin: 1vh 0 2vh 8.3vw;
+        padding: 0;
+    }
+    
+    .member-input {
+        display: flex;
+        flex-direction: column;
+        gap: 0.8vh;
+    }
+    
+    .member-input label, .member-input input, .member-input select, .member-input textarea {
+        font-size: 3.2vw;
+    }
+    
+    .member-input input, .member-input select, .member-input textarea {
+        width: 100%;
+        border-radius: 15px;
+        padding: 0.8vh 2vw;
+    }
+    
+    .member-input textarea {
+        height: 8vh;
+    }
+    
+    .member-warning p {
+        width: 100%;
+        font-size: 3.2vw;
+        margin-top: 1.5vh;
+        margin-bottom: 1vh;
+    }
+    
+    .member-input-check {
+        display: flex;
+        flex-direction: row;
+        gap: 2vw;
+    }
+    
+    .member-input-check input[type="checkbox"] {
+        width: 6vw;
+        height: auto;
+    }
+    
+    .member-input-check label {
+        width: 100%;
+        font-size: 2.8vw;
+    }
+    
+    .member-input input[type=submit] {
+        width: -moz-fit-content;
+        width: fit-content;
+        padding: 1.2vh 6vw;
+        margin-top: 0.5vh;
+        margin-left: 24vw;
+        border: 0;
+        border-radius: 25px;
+    }
+    
+    .submit-result {
+        font-size: 3vw;
+        padding-left: 4.2vw;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .submit-errors {
+        display: flex;
+        flex-direction: column;
+        gap: 0.8vh;
+        padding-left: 0;
+        padding-right: 2vw;
+    }
+    
+    .submit-errors p {
+        font-size: 2.8vw;
+    }
+}

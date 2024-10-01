@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ILKEA - MEMBER</title>
+    <link rel="stylesheet" href="../CSS/member.css">
+</head>
+<body>
+    <div id="header-part"></div>
+
+    <div class="member-body">
+        <div class="member-title">
+            <h2>| Register</h2>
+        </div>
+        <form name="register-member" id="register-member" class="member-form" method="post" enctype="multipart/form-data">
+            <div class="member-input">
+                <label for="member-username">Username</label>
+                <input type="text" name="member-username" id="member-username" placeholder="Enter your username...">
+            </div>
+            <div class="member-input">
+                <label for="member-gender">Gender</label>
+                <select name="member-gender" id="member-gender">
+                    <option value="" disabled selected>Select your gender...</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                </select>
+            </div>
+            <div class="member-input">
+                <label for="member-email">Email Address</label>
+                <input type="text" name="member-email" id="member-email" placeholder="example@gmail.com">
+            </div>
+            <div class="member-input">
+                <label for="member-phone">Phone Number</label>
+                <input type="text" name="member-phone" id="member-phone" placeholder="e.g: 08181922560">
+            </div>
+            <div class="member-input">
+                <label for="member-address">Physical Address</label>
+                <textarea name="member-address" id="member-address" placeholder="Enter your physical address..."></textarea>
+            </div>
+            <div class="member-input">
+                <label for="member-pass">Password</label>
+                <input type="password" name="member-pass" id="member-pass" placeholder="Enter your password...">
+            </div>
+            <div class="member-input">
+                <label for="member-cpass">Confirm Password</label>
+                <input type="password" name="member-cpass" id="member-cpass" placeholder="Repeat your password...">
+            </div>
+            <div class="member-warning">
+                <p>
+                    We're committed to protecting and respecting your privacy. 
+                    Your personal data will be used to support your shopping experience and for other purposes described in our privacy policy.
+                </p>
+            </div>
+            <div class="member-input-check">
+                <input type="checkbox" name="member-agreeTC" id="member-agreeTC">
+                <label for="member-agreeTC">I've read and understood the <span class="certain-term">ILKEA General Terms & Conditions</span>.</label>
+            </div>
+            <div class="member-input-check">
+                <input type="checkbox" name="member-agreeNews" id="member-agreeNews">
+                <label for="member-agreeNews">I would like to receive daily newsletters about the newest updates.</label>
+            </div>
+            <div class="member-input">
+                <input type="submit" value="Create Account" title="Create Account">
+            </div>
+            <div class="submit-result" id="submit-result"></div>
+            <div class="submit-errors" id="submit-errors"></div>
+        </form>
+    </div>
+
+    <div id="footer-part"></div>
+
+    <script src="../JS/val.js"></script>
+    <script src="../JS/template.js"></script>
+</body>
+</html>

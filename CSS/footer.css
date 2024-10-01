@@ -1,0 +1,251 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Jua';
+    src: url('../Asset/Fonts/Jua/Jua-Regular.ttf') format('truetype');
+}
+
+.footer-body {
+    font-family: 'Jua';
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #a7a7a7;
+    gap: 1vw;
+    z-index: 1000;
+}
+
+.top-part {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10vw;
+    margin-left: 2.5vw;
+}
+
+.footer-logo-part img {
+    margin: 2em 0 0.8em 3vw;
+    height: 8vw;
+}
+
+.footer-navigation-part {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    list-style-type: none;
+    margin: 3em 0 2em 0;
+    gap: 1.5vw 4vw;
+}
+
+.footer-navigation-part a {
+    text-decoration: none;
+    position: relative;
+    color: white;
+    font-size: 1.5vw;
+    font-weight: normal;
+    font-family: 'Jua';
+    white-space: nowrap;
+}
+
+.footer-navigation-part a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: white; 
+    transition: bottom 0.3s ease; 
+}
+
+.footer-navigation-part a:hover::after {
+    height: 2px;
+}
+
+.social-part {
+    display: flex;
+    flex-direction: column;
+    padding: 2em 0;
+    margin-top: 1em;
+    gap: 0.3vw;
+    color: white;
+    font-size: 1.2vw;
+}
+
+.social-icon {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5vw;
+}
+
+.social-icon img {
+    width: 2vw;
+    height: 2vw;
+}
+
+.bottom-part {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 8vw 0.8em 8vw;
+    color: white;
+    white-space: nowrap;
+}
+
+@media screen and (min-width: 481px) and (max-width: 800px) {
+    .footer-body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1vw;
+        width: 100%;
+    }
+    
+    .top-part {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 6vw;
+        margin-left: 3vw;
+    }
+    
+    .footer-logo-part img {
+        margin: 1.5em 0.5vw 0.4em 1.5vw;
+        height: 10vw;
+    }
+    
+    .footer-navigation-part {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin: 3em 1vw 2em 2vw;
+        gap: 1vw 2vw;
+    }
+    
+    .footer-navigation-part a {
+        position: relative;
+        font-size: 1.7vw;
+    }
+    
+    .footer-navigation-part a::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+    }
+    
+    .footer-navigation-part a:hover::after {
+        height: 2vh;
+    }
+    
+    .social-part {
+        display: flex;
+        flex-direction: column;
+        padding: 2em 2vw;
+        margin-top: 1em;
+        gap: 0.2vw;
+    }
+
+    .social-part p {
+        font-size: 2vw;
+    }
+    
+    .social-icon {
+        display: flex;
+        flex-direction: row;
+        gap: 1vw;
+    }
+    
+    .social-icon img {
+        width: 2vw;
+        height: 2vw;
+    }
+    
+    .bottom-part {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0 4vw 0.8em 4vw;
+        font-size: 1.3vw;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .footer-body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 0;
+        width: 100%;
+    }
+    
+    .top-part {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 1vw;
+        margin-left: 4vw;
+    }
+    
+    .footer-logo-part img {
+        margin: 1em 10vw 0.4em 0;
+        height: 10vw;
+    }
+    
+    .footer-navigation-part {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin: 1em 0 1em 0;
+        gap: 0.1em 0.2vw;
+    }
+    
+    .footer-navigation-part a {
+        position: relative;
+        font-size: 2vw;
+    }
+    
+    .footer-navigation-part a::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+    }
+    
+    .footer-navigation-part a:hover::after {
+        height: 2vh;
+    }
+    
+    .social-part {
+        display: flex;
+        flex-direction: column;
+        padding: 1em;
+        margin-top: 0.5em;
+        gap: 0.2em;
+    }
+
+    .social-part p {
+        font-size: 2vw;
+    }
+    
+    .social-icon {
+        display: flex;
+        flex-direction: row;
+        gap: 0.5em;
+    }
+    
+    .social-icon img {
+        width: 2.5vw;
+        height: 2.5vw;
+    }
+    
+    .bottom-part {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0 2vw 0.5em 2vw;
+        font-size: 1.6vw;
+    }
+}

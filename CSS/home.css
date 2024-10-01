@@ -1,0 +1,426 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Jua';
+    src: url('../Asset/Fonts/Jua/Jua-Regular.ttf') format('truetype');
+}
+
+.home-body {
+    background-color: #fff5e1;
+    width: 100%;
+    height: auto;
+    padding: 2em 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+}
+
+.promo-part, .brand-part, .product-part, .recommend-part {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2vw;
+    margin-left: 2vw ;
+}
+
+.promo-title, .brand-title, .product-title, .recommend-title {
+    font-family: 'Jua';
+    font-weight: bold;
+    font-size: 2vw;
+    margin-top: 1em;
+    margin-left: 4.2vw;
+    margin-bottom: 0.2em;
+}
+
+.promo-banner, .recommend-banner {
+    width: 89%;
+    position: relative;
+    margin: 0.1em 2vw 0.1em 4.5vw;
+}
+
+.banner1, .banner2 {
+    display: none;
+}
+
+.banner1 img, .banner2 img {
+    width: 100%;
+}
+
+@keyframes moveHorizontal {
+    from {transform: translateX(0.1%);}
+    to {transform: translateX(-0.1%);}
+}
+
+.move-horizontal {
+    animation-name: moveHorizontal;
+    animation-duration: 0.5s;
+}
+
+.btn-prev, .btn-next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    margin-top: -1.8em;
+    margin-left: 0.8vw;
+    padding: 1vw;
+    color: black;
+    font-weight: bold;
+    font-size: large;
+    transition: 0.3s ease;
+    border-radius: 50%;
+    -webkit-user-select: none;
+    user-select: none;
+    background-color: rgba(255,255,255,0.1);
+}
+
+.btn-next {
+    right: 0;
+    margin-right: 0.8vw;
+}
+  
+.btn-prev:hover, .btn-next:hover {
+    background-color: rgba(255,255,255,1);
+}
+
+.brand-logo {
+    width: 91vw;
+    display: flex;
+    flex-direction: row;
+    gap: 3.4%;
+    margin: 0.1em 0 0.1em 4.1vw;
+}
+
+.brand-logo img {
+    width: 10vw;
+    height: auto;
+    object-fit: contain;
+}
+
+.product-box {
+    display: flex;
+    flex-direction: row;
+    gap: 7.25vw;
+    margin-left: 4.5vw;
+}
+
+.product-card {
+    position: relative;
+}
+
+.product-card img {
+    display: block;
+    width: 16.2vw;
+    height: 16.2vw;
+    transition: 0.3s ease;
+    backface-visibility: hidden;
+}
+
+.product-card p {
+    position: absolute;
+    bottom: 1%;
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    font-size: 2vw; 
+    font-family: 'Jua';
+    font-weight: bold;
+    width: -moz-fit-content;
+    width: fit-content;
+    text-align: center;
+    transition: 0.3s ease;
+    opacity: 0;
+    -webkit-text-stroke: 0.35px black;
+    -webkit-text-fill-color: white;
+    text-shadow: 0 0 0.1em black, 0 0 0.1em black, 0 0 0.1em black, 0 0 0.1em black, 0 0 0.1em black;
+}
+
+.product-card:hover p {
+    opacity: 1;
+}
+
+.overview-part {
+    display: flex;
+    flex-direction: row;
+    gap: 0;
+    margin: 5vh 12vw 12vh 12vw;
+    height: 40%;
+    box-shadow: 0 5px 10px grey;
+}
+
+.overview-left {
+    background-color: #ffc700;
+    padding: 2em 0;
+    width: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.overview-image img {
+    width: 26vw;
+    height: auto;
+}
+
+.overview-right {
+    background-color: #e8e8e8;
+    width: 55%;
+    padding: 4vh 2vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.overview-text p {
+    font-family: 'Jua';
+    font-size: 1.5vw;
+    font-weight: normal;
+    text-align: justify;
+}
+
+@media screen and (min-width: 481px) and (max-width: 800px) {
+    .home-body {
+        width: 100%;
+        height: auto;
+        padding: 2em 0 2em 2vw;
+        display: flex;
+        flex-direction: column;
+        gap: 2vw;
+    }
+    
+    .promo-part, .brand-part, .product-part, .recommend-part {
+        display: flex;
+        flex-direction: column;
+        gap: 0.4vw;
+        margin-left: 0;
+    }
+    
+    .promo-title, .brand-title, .product-title, .recommend-title {
+        font-size: 2.2vw;
+        margin-top: 0.8em;
+        margin-left: 8.8vw;
+    }
+    
+    .promo-banner, .recommend-banner {
+        width: 78vw;
+        position: relative;
+        margin: 0.1em 0 0.1em 8.9vw;
+    }
+    
+    .banner1 img, .banner2 img {
+        width: 100%;
+    }
+    
+    .btn-prev, .btn-next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        margin-top: -2vw;
+        margin-left: 0.8vw;
+        padding: 0.8vw;
+        font-size: 1.5vw;
+        border-radius: 50%;
+    }
+    
+    .btn-next {
+        right: 0;
+        margin-right: 0.8vw;
+    }
+    
+    .brand-logo {
+        width: 85vw;
+        display: flex;
+        flex-direction: row;
+        gap: 5.6%;
+        margin: 0.1em 0 0.1em 9vw;
+    }
+    
+    .brand-logo img {
+        width: 7vw;
+        height: auto;
+        object-fit: contain;
+    }
+    
+    .product-box {
+        display: flex;
+        flex-direction: row;
+        gap: 4.65vw;
+        margin-left: 9vw;
+    }
+    
+    .product-card img {
+        display: block;
+        width: 16vw;
+        height: 16vw;
+    }
+    
+    .product-card p {
+        position: absolute;
+        bottom: 1%;
+        left: 50%; 
+        transform: translate(-50%, -50%); 
+        font-size: 2.5vw; 
+        width: -moz-fit-content;
+        width: fit-content;
+        opacity: 0;
+    }
+    
+    .overview-part {
+        display: flex;
+        flex-direction: row;
+        gap: 0;
+        margin: 3vh 5vw 2vh 5vw;
+        height: 100%;
+    }
+    
+    .overview-left {
+        background-color: #ffc700;
+        padding: 0;
+        width: 45%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .overview-image img {
+        width: 32vw;
+        height: auto;
+    }
+    
+    .overview-right {
+        padding: 3vw 2vw;
+        width: 55%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .overview-text p {
+        font-size: 2vw;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .home-body {
+        width: 100vw;
+        height: auto;
+        padding: 0.8vh 0.1vw;
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+    }
+    
+    .promo-part, .brand-part, .product-part, .recommend-part {
+        display: flex;
+        flex-direction: column;
+        gap: 0.2em;
+        margin-left: 1.5vw;
+    }
+    
+    .promo-title, .brand-title, .product-title, .recommend-title {
+        font-family: 'Jua';
+        font-weight: bold;
+        font-size: 3vw;
+        margin-top: 0.8em;
+        margin-left: 3vw;
+    }
+    
+    .promo-banner, .recommend-banner {
+        width: 90%;
+        position: relative;
+        margin: 0.1em 0 0.1em 3.2vw;
+    }
+    
+    .banner1 img, .banner2 img {
+        width: 100%;
+    }
+    
+    .btn-prev, .btn-next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        margin-top: -1em;
+        margin-left: 1.5vw;
+        padding: 0.5vw;
+        font-size: x-small;
+        border-radius: 50%;
+    }
+    
+    .btn-next {
+        right: 0;
+        margin-right: 1.5vw;
+    }
+    
+    .brand-logo {
+        display: flex;
+        flex-direction: row;
+        gap: 3%;
+        margin: 0.1vh 0 0.1vh 3vw;
+    }
+    
+    .brand-logo img {
+        width: 10.5vw;
+        height: auto;
+        object-fit: contain;
+    }
+    
+    .product-box {
+        display: flex;
+        flex-direction: row;
+        gap: 6vw;
+        margin-left: 3.5vw;
+    }
+    
+    .product-card img {
+        display: block;
+        width: 17.6vw;
+        height: 17.6vw;
+    }
+    
+    .product-card p {
+        position: absolute;
+        bottom: 1%;
+        left: 50%; 
+        transform: translate(-50%, -50%); 
+        font-size: 3.5vw; 
+        width: -moz-fit-content;
+        width: fit-content;
+        text-align: center;
+        opacity: 0;
+    }
+    
+    .overview-part {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        margin: 5vw;
+        height: auto;
+    }
+    
+    .overview-left {
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .overview-image img {
+        width: 80vw;
+        height: auto;
+    }
+    
+    .overview-right {
+        width: 100%;
+        height: auto;
+        padding: 2vh 4vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .overview-text p {
+        font-size: 3vw;
+    }
+}

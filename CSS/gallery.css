@@ -1,0 +1,323 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Jua';
+    src: url('../Asset/Fonts/Jua/Jua-Regular.ttf') format('truetype');
+}
+
+.gallery-body {
+    background-color: #fff5e1;
+    width: 100%;
+    padding: 8vh 1.5vw 12vh 0;
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+    font-family: 'Jua';
+}
+
+.furniture-part, .decoration-part, .workspace-part, .outdoor-part {
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    margin: 3vh 0 0 6vw;
+}
+
+.furniture-part h2, .decoration-part h2, .workspace-part h2, .outdoor-part h2 {
+    font-family: 'Jua';
+    font-size: 2.8vw;
+    font-weight: bold;
+}
+
+@keyframes moveHorizontal {
+    from {transform: translateX(0.1%);}
+    to {transform: translateX(-0.1%);}
+}
+
+.move-horizontal {
+    animation-name: moveHorizontal;
+    animation-duration: 0.5s;
+}
+
+.cards {
+    width: 100%;
+    position: relative;
+    margin: 0 2vw 0.1em 0;
+}
+
+.set1, .set2, .set3, .set4 {
+    width: 100%;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.5vh;
+    background-color: #ffcd4c;
+    padding: 2vh 1vw;
+    width: 21vw;
+    height: auto;
+}
+
+.card img {
+    width: 16.5vw;
+    height: auto;
+    padding: 3vh 0 0.5vh 2vw;
+}
+
+.card:hover {
+    box-shadow: 0 5px 10px grey, 0 5px 10px grey;
+}
+
+.card-detail {
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    margin: 0.5vh 1.5vw;
+    font-weight: bold;
+}
+
+.card-detail h3 {
+    font-size: 2vw;
+    font-weight: bold;
+}
+
+.price {
+    display: flex;
+    flex-direction: row;
+    gap: 0.2vw;
+    align-items: baseline;
+    padding-top: 5vh;
+}
+
+.price p {
+    font-weight: bold;
+}
+
+.price h3 {
+    font-size: 1.8vw;
+    font-weight: bold;
+}
+
+.set-prev, .set-next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    margin-top: -1.5vh;
+    margin-left: 1vw;
+    padding: 1.2vw;
+    color: black;
+    font-weight: bold;
+    font-size: 1.2vw;
+    transition: 0.3s ease;
+    border-radius: 50%;
+    -webkit-user-select: none;
+    user-select: none;
+    background-color: rgba(255,255,255,0.1);
+}
+
+.set-next {
+    right: 0;
+    margin-right: 7%;
+}
+  
+.set-prev:hover, .set-next:hover {
+    background-color: rgba(255,255,255,1);
+}
+
+@media only screen and (min-width: 481px) and (max-width: 800px) {
+    .gallery-body {
+        width: 100%;
+        padding: 5vh 1.5vw 10vh 1.5vw;
+        display: flex;
+        flex-direction: column;
+        gap: 5vh;
+    }
+    
+    .furniture-part, .decoration-part, .workspace-part, .outdoor-part {
+        width: 88%;
+        display: flex;
+        flex-direction: column;
+        gap: 2vh;
+        margin: 1vh 0 0 6vw;
+    }
+    
+    .furniture-part h2, .decoration-part h2, .workspace-part h2, .outdoor-part h2 {
+        font-size: 3vw;
+        margin-left: 0.2vw;
+    }
+    
+    .cards {
+        width: 100%;
+        position: relative;
+        margin: 0 0 0.1vh 0.5vw;
+    }
+
+    .set1, .set2, .set3, .set4 {
+        width: 100%;
+    }
+    
+    .card {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5vh;
+        padding: 0.1vh 0 0.1vh 0.5vw;
+        width: 30vw;
+        height: auto;
+        object-fit: cover;
+    }
+    
+    .card img {
+        width: 16vw;
+        height: auto;
+        padding: 2vh 2vw 0 2vw;
+        margin-left: 1vw;
+    }
+    
+    .card-detail {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5em;
+        margin: 0.1vh 2vw 0 2vw;
+    }
+
+    .card-detail p {
+        font-size: 1.5vw;
+    }
+    
+    .card-detail h3 {
+        font-size: 2.2vw;
+    }
+    
+    .price {
+        display: flex;
+        flex-direction: row;
+        gap: 0.1vw;
+        padding-bottom: 2vh;
+    }
+    
+    .price p {
+        font-size: 1.5vw;
+    }
+    
+    .price h3 {
+        font-size: 2.2vw;
+    }
+    
+    .set-prev, .set-next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        margin-top: -3.5vh;
+        margin-left: 0.9vw;
+        padding: 1.5vw;
+        font-size: 2vw;
+        border-radius: 50%;
+    }
+    
+    .set-next {
+        right: 0;
+        margin-right: 0.8vw;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .gallery-body {
+        width: 100%;
+        padding: 1vh 1.5vw 3vh 1.5vw;
+        display: flex;
+        flex-direction: column;
+        gap: 2vh;
+    }
+    
+    .furniture-part, .decoration-part, .workspace-part, .outdoor-part {
+        width: 88%;
+        display: flex;
+        flex-direction: column;
+        gap: 1vh;
+        margin: 1.5vh 0 0 6vw;
+    }
+    
+    .furniture-part h2, .decoration-part h2, .workspace-part h2, .outdoor-part h2 {
+        font-size: 4vw;
+        margin-left: 0.2vw;
+    }
+    
+    .cards {
+        width: 100%;
+        position: relative;
+        margin: 0 0 0.1vh 0.5vw;
+    }
+
+    .set1, .set2, .set3, .set4 {
+        width: 100%;
+        display: none;
+        gap: 0 0.2vw;
+    }
+    
+    .card {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5em;
+        padding: 0.1vh 0 0.1vh 0.5vw;
+        width: 30vw;
+        height: auto;
+        object-fit: cover;
+    }
+    
+    .card img {
+        width: 16vw;
+        height: auto;
+        padding: 1vh 0 0 1vw;
+    }
+    
+    .card-detail {
+        display: flex;
+        flex-direction: column;
+        gap: 0.8vh;
+        margin: 0.1vh 2vw 0 2vw;
+    }
+
+    .card-detail p {
+        font-size: 1.5vw;
+    }
+    
+    .card-detail h3 {
+        font-size: 2.2vw;
+    }
+    
+    .price {
+        display: flex;
+        flex-direction: row;
+        gap: 0.1vw;
+        padding-bottom: 1vh;
+    }
+    
+    .price p {
+        font-size: 1.5vw;
+    }
+    
+    .price h3 {
+        font-size: 2.2vw;
+    }
+    
+    .set-prev, .set-next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        margin-top: -1.2vh;
+        margin-left: 0.9vw;
+        padding: 2vw;
+        font-size: 2vw;
+        border-radius: 50%;
+    }
+    
+    .set-next {
+        right: 0;
+        margin-right: 0.8vw;
+    }
+}

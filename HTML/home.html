@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ILKEA - HOME</title>
+    <link rel="stylesheet" href="../CSS/home.css">
+</head>
+<body>
+    <div id="header-part"></div>
+
+    <div class="home-body">
+        <div class="promo-part">
+            <div class="promo-title">
+                <h2>| Promotions</h2>
+            </div>
+            <div class="promo-banner">
+                <div class="banner1 move-horizontal">
+                    <img src="../Asset/ikea_banner1.jpg" alt="Banner1" title="Banner1">
+                </div>
+                <div class="banner1 move-horizontal">
+                    <img src="../Asset/ikea_banner2.jpg" alt="Banner2" title="Banner2">
+                </div>
+                <a class="btn-prev" onclick="moveBanner(-1,0)">&#x276E;</a>
+                <a class="btn-next" onclick="moveBanner(1,0)">&#x276F;</a>
+            </div>
+        </div>
+        <div class="brand-part">
+            <div class="brand-title">
+               <h2>| Brands</h2>
+            </div>
+            <div class="brand-logo">
+               <img src="../Asset/ingka.png" alt="Brand1" title="Brand1">
+               <img src="../Asset/ikano.png" alt="Brand2" title="Brand2">
+               <img src="../Asset/K3.jpg" alt="Brand3" title="Brand3">
+               <img src="../Asset/brand1.png" alt="Brand4" title="Brand4">
+               <img src="../Asset/brand2.png" alt="Brand5" title="Brand5">
+               <img src="../Asset/brand3.png" alt="Brand6" title="Brand6">
+               <img src="../Asset/brand4.png" alt="Brand7" title="Brand7">
+            </div>
+        </div>
+        <div class="product-part">
+            <div class="product-title">
+                <h2>| Products</h2>
+            </div>
+            <div class="product-box">
+                <div class="product-card">
+                    <img src="../Asset/ikea_furniture.jpg" alt="Furniture">
+                    <p>Furniture</p>
+                </div>
+                <div class="product-card">
+                    <img src="../Asset/ikea_decoration.jpg" alt="Decoration">
+                    <p>Decoration</p>
+                </div>
+                <div class="product-card">
+                    <img src="../Asset/ikea_workspace.jpg" alt="Workspace">
+                    <p>Workspace</p>
+                </div>
+                <div class="product-card">
+                    <img src="../Asset/ikea_outdoor.jpg" alt="Outdoor">
+                    <p>Outdoor</p>
+                </div>
+            </div>
+        </div>
+        <div class="recommend-part">
+            <div class="recommend-title">
+                <h2>| Recommended</h2>
+            </div>
+            <div class="recommend-banner">
+                <div class="banner2 move-horizontal">
+                    <img src="../Asset/ikea_banner3.jpg" alt="Banner3" title="Banner3">
+                </div>
+                <div class="banner2 move-horizontal">
+                    <img src="../Asset/ikea_banner4.jpg" alt="Banner4" title="Banner4">
+                </div>
+                <a class="btn-prev" onclick="moveBanner(-1,1)">&#x276E;</a>
+                <a class="btn-next" onclick="moveBanner(1,1)">&#x276F;</a>
+            </div>
+        </div>
+        <div class="overview-part">
+            <div class="overview-left">
+                <div class="overview-image">
+                    <img src="../Asset/Logo-ILKEA.png" alt="ILKEA">
+                </div>
+            </div>
+            <div class="overview-right">
+                <div class="overview-text">
+                    <p>
+                    ILKEA is a leading global furniture retailer recognized for its stylish and affordable designs. 
+                    Originating from Sweden, ILKEA is renowned for its flat-packaging and self-assembly model, offering a range of innovative furniture and home goods. 
+                    Emphasizing sustainability, ILKEA has made contemporary design accessible and has significantly impacted modern lifestyle aesthetics.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer-part"></div>
+
+    <script src="../JS/template.js"></script>
+    <script src="../JS/banner.js"></script>
+</body>
+</html>

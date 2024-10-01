@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Jua';
+    src: url('../Asset/Fonts/Jua/Jua-Regular.ttf') format('truetype');
+}
+
+.header-body {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 25vw;
+    background-color: black;
+    width: 100%;
+    z-index: 1000;
+}
+
+.header-logo-part img {
+    margin: 2vh 1vw 2vh 0;
+    width: 12vw;
+    height: auto;
+}
+
+.header-navigation-part {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    gap: 2.5vw;
+}
+
+.header-navigation-part a {
+    text-decoration: none;
+    position: relative;
+    color: white;
+    font-size: 2vw;
+    font-weight: bold;
+    font-family: 'Jua';
+    white-space: nowrap;
+}
+
+.header-navigation-part a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: white; 
+    transition: bottom 0.3s ease; 
+}
+
+.header-navigation-part a:hover::after {
+    height: 0.1vh;
+}
+
+@media only screen and (min-width: 481px) and (max-width: 800px) {
+    .header-body {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 15vw;
+        width: 100vw;
+    }
+
+    .header-logo-part img {
+        margin: 2vh 3vw 2vh 0;
+        width: 18vw;
+        height: auto;
+    }
+    
+    .header-navigation-part {
+        display: flex;
+        flex-direction: row;
+        gap: 2vw;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .header-navigation-part a {
+        position: relative;
+        font-size: 2vw;
+        width: -moz-fit-content;
+        width: fit-content;
+    }
+    
+    .header-navigation-part a::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+    }
+    
+    .header-navigation-part a:hover::after {
+        height: 0.1vh;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .header-body {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 4vw;
+        width: 100vw;
+    }
+
+    .header-logo-part img {
+        margin: 0.5em 1vw 0.5em 0;
+        width: 18vw;
+        height: auto;
+    }
+    
+    .header-navigation-part {
+        display: flex;
+        flex-direction: row;
+        gap: 3vw;
+    }
+    
+    .header-navigation-part a {
+        position: relative;
+        font-size: 2vw;
+        width: -moz-fit-content;
+        width: fit-content;
+    }
+    
+    .header-navigation-part a::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+    }
+    
+    .header-navigation-part a:hover::after {
+        height: 0.1vh;
+    }
+}

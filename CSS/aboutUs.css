@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Jua';
+    src: url('../Asset/Fonts/Jua/Jua-Regular.ttf') format('truetype');
+}
+
+.about-body {
+    background-color: #fff5e1;
+    width: 100%;
+    padding: 10vh 6vw;
+    display: flex;
+    flex-direction: column;
+    gap: 6vh;
+}
+
+.about-top, .about-bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+}
+
+.about-bottom {
+    margin-top: 1vh;
+    gap: 6vh;
+}
+
+.about-b {
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+}
+
+.about-top h1, .about-b h1 {
+    font-family: 'Jua';
+    font-size: 3.5vw;
+    font-weight: bold;
+}
+
+.about-q, .about-c {
+    display: flex;
+    flex-direction: row;
+    gap: 0.8vw;
+}
+
+.about-q img, .about-c img {
+    max-width: 38vw;
+    height: auto;
+    object-fit: cover;
+}
+
+.about-top p, .about-q p, .about-c p {
+    font-family: 'Jua';
+    font-size: 2vw;
+    font-weight: normal;
+    color: black;
+    text-align: justify;
+}
+
+.about-q p, .about-c p {
+    padding: 0 0 0 1vw;
+}
+
+@media only screen and (min-width: 481px) and (max-width: 800px) {
+    .about-body {
+        width: 100%;
+        padding: 2em;
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+    }
+    
+    .about-top, .about-bottom {
+        display: flex;
+        flex-direction: column;
+        gap: 0.8em;
+    }
+    
+    .about-bottom {
+        margin-top: 1em;
+        gap: 2.5em;
+    }
+    
+    .about-b {
+        display: flex;
+        flex-direction: column;
+        gap: 0.8em;
+    }
+    
+    .about-top h1, .about-b h1 {
+        font-size: x-large;
+    }
+    
+    .about-q, .about-c {
+        display: flex;
+        flex-direction: column;
+        gap: 0.6em;
+    }
+    
+    .about-q img, .about-c img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    .about-top p, .about-q p, .about-c p {
+        font-family: 'Jua';
+        font-size: large;
+    }
+    
+    .about-q p, .about-c p {
+        padding: 0;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .about-body {
+        width: 100%;
+        padding: 2em 1.5em;
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+    }
+    
+    .about-top, .about-bottom {
+        display: flex;
+        flex-direction: column;
+        gap: 0.8em;
+    }
+    
+    .about-bottom {
+        margin-top: 1em;
+        gap: 2.5em;
+    }
+    
+    .about-b {
+        display: flex;
+        flex-direction: column;
+        gap: 0.8em;
+    }
+    
+    .about-top h1, .about-b h1 {
+        font-size: large;
+    }
+    
+    .about-q, .about-c {
+        display: flex;
+        flex-direction: column;
+        gap: 0.6em;
+    }
+    
+    .about-q img, .about-c img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    .about-top p, .about-q p, .about-c p {
+        font-family: 'Jua';
+        font-size: small;
+    }
+    
+    .about-q p, .about-c p {
+        padding: 0;
+    }
+}

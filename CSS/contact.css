@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Jua';
+    src: url('../Asset/Fonts/Jua/Jua-Regular.ttf') format('truetype');
+}
+
+.contact-body {
+    background-color: #fff5e1;
+    width: 100%;
+    padding: 3em 5.5em 5em 5.5em;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.contact-body h1{
+    font-family: 'Jua';
+    font-size: 3.2vw;
+    font-weight: bold;
+}
+
+.contact-locs {
+    display: flex;
+    flex-direction: column;
+    gap: 5em;
+}
+
+.contact-row {
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+}
+
+.contact-row img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 6vh;
+    width: 70%;
+    height: auto;
+}
+
+.contact-info h1 {
+    font-family: 'Jua';
+    font-size: 3vw;
+    font-weight: bold;
+    color: black;
+}
+
+.contact-info h2 {
+    font-family: 'Jua';
+    font-size: 2.2vw;
+    font-weight: bold;
+    color: black;
+}
+
+@media only screen and (min-width: 481px) and (max-width: 800px) {
+    .contact-body {
+        width: 100%;
+        padding: 2em 2em;
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+    }
+    
+    .contact-body h1{
+        font-size: x-large;
+    }
+    
+    .contact-locs {
+        display: flex;
+        flex-direction: column;
+        gap: 2.5em;
+    }
+    
+    .contact-row {
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+    }
+    
+    .contact-row img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+    
+    .contact-info {
+        display: flex;
+        flex-direction: column;
+        gap: 0.8em;
+        width: 90%;
+        height: auto;
+    }
+    
+    .contact-info h1 {
+        font-size: x-large;
+    }
+    
+    .contact-info h2 {
+        font-size: large;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .contact-body {
+        width: 100%;
+        padding: 2em 1.2em;
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+    }
+    
+    .contact-body h1{
+        font-size: large;
+    }
+    
+    .contact-locs {
+        display: flex;
+        flex-direction: column;
+        gap: 2.5em;
+    }
+    
+    .contact-row {
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+    }
+    
+    .contact-row img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+    
+    .contact-info {
+        display: flex;
+        flex-direction: column;
+        gap: 0.8em;
+        width: 90%;
+        height: auto;
+    }
+    
+    .contact-info h1 {
+        font-size: large;
+    }
+    
+    .contact-info h2 {
+        font-size: medium;
+    }
+}
