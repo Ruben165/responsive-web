@@ -1,64 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ILKEA - MEMBER</title>
+    <title id="title-member"></title>
     <link rel="stylesheet" href="../CSS/member.css">
 </head>
+
 <body>
     <div id="header-part"></div>
 
     <div class="member-body">
         <div class="member-title">
-            <h2>| Register</h2>
+            <h2 id="register"></h2>
         </div>
-        <form name="register-member" id="register-member" class="member-form" method="post" enctype="multipart/form-data">
+        <form name="register-member" id="register-member" class="member-form" method="post"
+            enctype="multipart/form-data">
             <div class="member-input">
-                <label for="member-username">Username</label>
+                <label for="member-username" id="username"></label>
                 <input type="text" name="member-username" id="member-username" placeholder="Enter your username...">
             </div>
             <div class="member-input">
-                <label for="member-gender">Gender</label>
+                <label for="member-gender" id="gender"></label>
                 <select name="member-gender" id="member-gender">
-                    <option value="" disabled selected>Select your gender...</option>
-                    <option value="Male">Male</option>
-                    <option value="Female">Female</option>
+                    <option value="" disabled selected id="select-your-gender"></option>
+                    <option value="Male" id="male"></option>
+                    <option value="Female" id="female"></option>
                 </select>
             </div>
             <div class="member-input">
-                <label for="member-email">Email Address</label>
+                <label for="member-email" id="email-address"></label>
                 <input type="text" name="member-email" id="member-email" placeholder="example@gmail.com">
             </div>
             <div class="member-input">
-                <label for="member-phone">Phone Number</label>
+                <label for="member-phone" id="phone-number"></label>
                 <input type="text" name="member-phone" id="member-phone" placeholder="e.g: 08181922560">
             </div>
             <div class="member-input">
-                <label for="member-address">Physical Address</label>
-                <textarea name="member-address" id="member-address" placeholder="Enter your physical address..."></textarea>
+                <label for="member-address" id="home-address"></label>
+                <textarea name="member-address" id="member-address" placeholder="Enter your home address..."></textarea>
             </div>
             <div class="member-input">
-                <label for="member-pass">Password</label>
+                <label for="member-pass" id="password"></label>
                 <input type="password" name="member-pass" id="member-pass" placeholder="Enter your password...">
             </div>
             <div class="member-input">
-                <label for="member-cpass">Confirm Password</label>
+                <label for="member-cpass" id="confirm-password"></label>
                 <input type="password" name="member-cpass" id="member-cpass" placeholder="Repeat your password...">
             </div>
             <div class="member-warning">
-                <p>
-                    We're committed to protecting and respecting your privacy. 
-                    Your personal data will be used to support your shopping experience and for other purposes described in our privacy policy.
-                </p>
+                <p id="privacy-info"></p>
             </div>
             <div class="member-input-check">
                 <input type="checkbox" name="member-agreeTC" id="member-agreeTC">
-                <label for="member-agreeTC">I've read and understood the <span class="certain-term">ILKEA General Terms & Conditions</span>.</label>
+                <label for="member-agreeTC">I've read and understood the <span class="certain-term">ILKEA General Terms
+                        & Conditions</span>.</label>
             </div>
             <div class="member-input-check">
                 <input type="checkbox" name="member-agreeNews" id="member-agreeNews">
-                <label for="member-agreeNews">I would like to receive daily newsletters about the newest updates.</label>
+                <label for="member-agreeNews" id="update-info"></label>
             </div>
             <div class="member-input">
                 <input type="submit" value="Create Account" title="Create Account">
@@ -70,7 +71,8 @@
 
     <div id="footer-part"></div>
 
-    <script src="../JS/val.js"></script>
     <script src="../JS/template.js"></script>
+    <script src="../JS/val.js"></script>
 </body>
+
 </html>

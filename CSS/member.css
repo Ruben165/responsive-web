@@ -4,7 +4,9 @@
     box-sizing: border-box;
 }
 
-input, select, textarea {
+input,
+select,
+textarea {
     border: 0;
     border-color: transparent;
     outline: none;
@@ -51,13 +53,18 @@ input, select, textarea {
     gap: 1vh;
 }
 
-.member-input label, .member-input input, .member-input select, .member-input textarea {
+.member-input label,
+.member-input input,
+.member-input select,
+.member-input textarea {
     font-family: 'Jua';
     font-weight: bold;
     font-size: 1.5vw;
 }
 
-.member-input input, .member-input select, .member-input textarea {
+.member-input input,
+.member-input select,
+.member-input textarea {
     width: 100%;
     border-radius: 15px;
     padding: 0.5vh 1vw;
@@ -72,7 +79,7 @@ input, select, textarea {
     text-align: justify;
     font-family: 'Jua';
     font-weight: normal;
-    font-size: 2.25vw;
+    font-size: 1.5vw;
     margin-top: 1.5vh;
     margin-bottom: 1vh;
 }
@@ -154,14 +161,14 @@ input, select, textarea {
         flex-direction: column;
         gap: 0.8vh;
     }
-    
+
     .member-title {
         font-size: 2.5vw;
         margin-top: 4.5vh;
         margin-left: 5.8vw;
         margin-bottom: 0.2vh;
     }
-    
+
     .member-form {
         display: flex;
         flex-direction: column;
@@ -169,52 +176,57 @@ input, select, textarea {
         margin: 1.5vh 0 2vh 5.8vw;
         padding: 0;
     }
-    
+
     .member-input {
         display: flex;
         flex-direction: column;
         gap: 0.8vh;
     }
-    
-    .member-input label, .member-input input, .member-input select, .member-input textarea {
+
+    .member-input label,
+    .member-input input,
+    .member-input select,
+    .member-input textarea {
         font-size: 2.4vw;
     }
-    
-    .member-input input, .member-input select, .member-input textarea {
+
+    .member-input input,
+    .member-input select,
+    .member-input textarea {
         width: 100%;
         border-radius: 15px;
         padding: 1vh 2vw;
     }
-    
+
     .member-input textarea {
         height: 10vh;
     }
-    
+
     .member-warning p {
         width: 100%;
-        font-size: 2.8vw;
+        font-size: 2vw;
         margin-top: 1.5vh;
         margin-bottom: 1.2vh;
     }
-    
+
     .member-input-check {
         display: flex;
         flex-direction: row;
         gap: 1.2vw;
     }
-    
+
     .member-input-check input[type="checkbox"] {
         width: 2vw;
         height: auto;
         margin-top: 0.5vh;
     }
-    
+
     .member-input-check label {
         width: 100%;
         font-size: 2.5vw;
         height: auto;
     }
-    
+
     .member-input input[type=submit] {
         width: -moz-fit-content;
         width: fit-content;
@@ -225,12 +237,12 @@ input, select, textarea {
         border-radius: 25px;
         font-weight: normal;
     }
-    
+
     .submit-result {
         font-size: 2.2vw;
         padding-left: 1vw;
     }
-    
+
     .submit-errors {
         display: flex;
         flex-direction: column;
@@ -240,7 +252,7 @@ input, select, textarea {
         padding-left: 0;
         padding-right: 2vw;
     }
-    
+
     .submit-errors p {
         font-size: 2vw;
     }
@@ -254,14 +266,14 @@ input, select, textarea {
         flex-direction: column;
         gap: 1vh;
     }
-    
+
     .member-title {
         font-size: 3vw;
         margin-top: 3.5vh;
         margin-left: 8vw;
         margin-bottom: 0.2vh;
     }
-    
+
     .member-form {
         display: flex;
         flex-direction: column;
@@ -269,50 +281,55 @@ input, select, textarea {
         margin: 1vh 0 2vh 8.3vw;
         padding: 0;
     }
-    
+
     .member-input {
         display: flex;
         flex-direction: column;
         gap: 0.8vh;
     }
-    
-    .member-input label, .member-input input, .member-input select, .member-input textarea {
+
+    .member-input label,
+    .member-input input,
+    .member-input select,
+    .member-input textarea {
         font-size: 3.2vw;
     }
-    
-    .member-input input, .member-input select, .member-input textarea {
+
+    .member-input input,
+    .member-input select,
+    .member-input textarea {
         width: 100%;
         border-radius: 15px;
         padding: 0.8vh 2vw;
     }
-    
+
     .member-input textarea {
         height: 8vh;
     }
-    
+
     .member-warning p {
         width: 100%;
-        font-size: 3.2vw;
+        font-size: 2.5vw;
         margin-top: 1.5vh;
         margin-bottom: 1vh;
     }
-    
+
     .member-input-check {
         display: flex;
         flex-direction: row;
         gap: 2vw;
     }
-    
+
     .member-input-check input[type="checkbox"] {
         width: 6vw;
         height: auto;
     }
-    
+
     .member-input-check label {
         width: 100%;
         font-size: 2.8vw;
     }
-    
+
     .member-input input[type=submit] {
         width: -moz-fit-content;
         width: fit-content;
@@ -322,14 +339,14 @@ input, select, textarea {
         border: 0;
         border-radius: 25px;
     }
-    
+
     .submit-result {
         font-size: 3vw;
         padding-left: 4.2vw;
         justify-content: center;
         align-items: center;
     }
-    
+
     .submit-errors {
         display: flex;
         flex-direction: column;
@@ -337,7 +354,7 @@ input, select, textarea {
         padding-left: 0;
         padding-right: 2vw;
     }
-    
+
     .submit-errors p {
         font-size: 2.8vw;
     }

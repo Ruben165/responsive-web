@@ -6,7 +6,7 @@ function addErrorMessage(msg) {
 }
 
 function usernameVal(username) {
-    return username.length>=5 && !(username.includes(' '));
+    return username.length >= 5 && !(username.includes(' '));
 }
 
 function genderVal(gender) {
@@ -18,22 +18,22 @@ function emailVal(email) {
 }
 
 function phoneVal(phone) {
-    return !(isNaN(phone)) && phone.length>=10;
+    return !(isNaN(phone)) && phone.length >= 10;
 }
 
 function addressVal(address) {
-    return address.length>=6;
+    return address.length >= 6;
 }
 
 function passVal(pass) {
-    if (pass.length<8) {
+    if (pass.length < 8) {
         return false;
     }
 
-    for(var i=0;i<pass.length;i++) {
+    for (var i = 0; i < pass.length; i++) {
         var char = pass.charCodeAt(i);
 
-        if(!((char>=48&&char<=57) || (char>=65&&char<=90) || (char>=97&&char<=122))) {
+        if (!((char >= 48 && char <= 57) || (char >= 65 && char <= 90) || (char >= 97 && char <= 122))) {
             return false;
         }
     }
@@ -42,7 +42,7 @@ function passVal(pass) {
 }
 
 function cpassVal(pass, cpass) {
-    return pass === cpass && cpass.length==pass.length;
+    return pass === cpass && cpass.length == pass.length;
 }
 
 function validate() {
@@ -58,53 +58,53 @@ function validate() {
     var agreeNews = document.getElementById('member-agreeNews').checked;
 
     var submit_result = document.getElementById('submit-result');
-    submit_result.innerHTML=''; 
+    submit_result.innerHTML = '';
 
-    if(usernameVal(username)!==true) {
+    if (usernameVal(username) !== true) {
         count++;
         addErrorMessage('Invalid Username (must be at least 5 characters and no whitespace)');
     }
-    if(genderVal(gender)!==true) {
+    if (genderVal(gender) !== true) {
         count++;
         addErrorMessage('Please Select Gender (Male or Female)');
     }
-    if(emailVal(email)!==true) {
+    if (emailVal(email) !== true) {
         count++;
         addErrorMessage('Invalid Email Format (must ends with "@gmail.com")');
     }
-    if(phoneVal(phone)!=true) {
+    if (phoneVal(phone) != true) {
         count++;
         addErrorMessage('Invalid Phone Number (numeric only and must be at least 10 numbers long)');
     }
-    if(addressVal(address)!=true) {
+    if (addressVal(address) != true) {
         count++;
         addErrorMessage('Invalid Physical Address (must be at least 6 characters long)');
     }
-    if(passVal(pass)!==true) {
+    if (passVal(pass) !== true) {
         count++;
         addErrorMessage('Password must only contain letters and numbers, and be at least 8 characters long');
     }
-    if(cpassVal(pass, cpass)!==true) {
+    if (cpassVal(pass, cpass) !== true) {
         count++;
         addErrorMessage('Confirm Password must be filled and must match with Password');
     }
-    if(!(agreeTC)) {
+    if (!(agreeTC)) {
         count++;
         addErrorMessage('Please agree to the Terms and Conditions');
     }
 
-    if(count==0) {
-        submit_result.innerHTML='Successfully Created Account';
-        submit_result.style.color='green';
+    if (count == 0) {
+        submit_result.innerHTML = 'Successfully Created Account';
+        submit_result.style.color = 'green';
     } else {
-        submit_result.innerHTML=count+" error(s) detected";
-        submit_result.style.color='red';
+        submit_result.innerHTML = count + " error(s) detected";
+        submit_result.style.color = 'red';
     }
 }
 
 document.getElementById('register-member').addEventListener('submit', function (event) {
     var error = document.getElementById('submit-errors');
-    while(error.firstChild) {
+    while (error.firstChild) {
         error.removeChild(error.firstChild);
     }
     event.preventDefault();

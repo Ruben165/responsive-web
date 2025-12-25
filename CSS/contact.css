@@ -18,7 +18,7 @@
     gap: 2em;
 }
 
-.contact-body h1{
+.contact-body h1 {
     font-family: 'Jua';
     font-size: 3.2vw;
     font-weight: bold;
@@ -72,29 +72,29 @@
         flex-direction: column;
         gap: 1em;
     }
-    
-    .contact-body h1{
+
+    .contact-body h1 {
         font-size: x-large;
     }
-    
+
     .contact-locs {
         display: flex;
         flex-direction: column;
         gap: 2.5em;
     }
-    
+
     .contact-row {
         display: flex;
         flex-direction: column;
         gap: 1em;
     }
-    
+
     .contact-row img {
         width: 100%;
         height: auto;
         object-fit: cover;
     }
-    
+
     .contact-info {
         display: flex;
         flex-direction: column;
@@ -102,11 +102,11 @@
         width: 90%;
         height: auto;
     }
-    
+
     .contact-info h1 {
         font-size: x-large;
     }
-    
+
     .contact-info h2 {
         font-size: large;
     }
@@ -120,29 +120,29 @@
         flex-direction: column;
         gap: 1em;
     }
-    
-    .contact-body h1{
+
+    .contact-body h1 {
         font-size: large;
     }
-    
+
     .contact-locs {
         display: flex;
         flex-direction: column;
         gap: 2.5em;
     }
-    
+
     .contact-row {
         display: flex;
         flex-direction: column;
         gap: 1em;
     }
-    
+
     .contact-row img {
         width: 100%;
         height: auto;
         object-fit: cover;
     }
-    
+
     .contact-info {
         display: flex;
         flex-direction: column;
@@ -150,11 +150,11 @@
         width: 90%;
         height: auto;
     }
-    
+
     .contact-info h1 {
         font-size: large;
     }
-    
+
     .contact-info h2 {
         font-size: medium;
     }

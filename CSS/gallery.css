@@ -19,22 +19,33 @@
     font-family: 'Jua';
 }
 
-.furniture-part, .decoration-part, .workspace-part, .outdoor-part {
+.furniture-part,
+.decoration-part,
+.workspace-part,
+.outdoor-part {
     display: flex;
     flex-direction: column;
     gap: 2vh;
     margin: 3vh 0 0 6vw;
 }
 
-.furniture-part h2, .decoration-part h2, .workspace-part h2, .outdoor-part h2 {
+.furniture-part h2,
+.decoration-part h2,
+.workspace-part h2,
+.outdoor-part h2 {
     font-family: 'Jua';
     font-size: 2.8vw;
     font-weight: bold;
 }
 
 @keyframes moveHorizontal {
-    from {transform: translateX(0.1%);}
-    to {transform: translateX(-0.1%);}
+    from {
+        transform: translateX(0.1%);
+    }
+
+    to {
+        transform: translateX(-0.1%);
+    }
 }
 
 .move-horizontal {
@@ -48,7 +59,10 @@
     margin: 0 2vw 0.1em 0;
 }
 
-.set1, .set2, .set3, .set4 {
+.set1,
+.set2,
+.set3,
+.set4 {
     width: 100%;
 }
 
@@ -103,7 +117,8 @@
     font-weight: bold;
 }
 
-.set-prev, .set-next {
+.set-prev,
+.set-next {
     cursor: pointer;
     position: absolute;
     top: 50%;
@@ -117,16 +132,17 @@
     border-radius: 50%;
     -webkit-user-select: none;
     user-select: none;
-    background-color: rgba(255,255,255,0.1);
+    background-color: rgba(255, 255, 255, 0.1);
 }
 
 .set-next {
     right: 0;
     margin-right: 7%;
 }
-  
-.set-prev:hover, .set-next:hover {
-    background-color: rgba(255,255,255,1);
+
+.set-prev:hover,
+.set-next:hover {
+    background-color: rgba(255, 255, 255, 1);
 }
 
 @media only screen and (min-width: 481px) and (max-width: 800px) {
@@ -137,30 +153,39 @@
         flex-direction: column;
         gap: 5vh;
     }
-    
-    .furniture-part, .decoration-part, .workspace-part, .outdoor-part {
+
+    .furniture-part,
+    .decoration-part,
+    .workspace-part,
+    .outdoor-part {
         width: 88%;
         display: flex;
         flex-direction: column;
         gap: 2vh;
         margin: 1vh 0 0 6vw;
     }
-    
-    .furniture-part h2, .decoration-part h2, .workspace-part h2, .outdoor-part h2 {
+
+    .furniture-part h2,
+    .decoration-part h2,
+    .workspace-part h2,
+    .outdoor-part h2 {
         font-size: 3vw;
         margin-left: 0.2vw;
     }
-    
+
     .cards {
         width: 100%;
         position: relative;
         margin: 0 0 0.1vh 0.5vw;
     }
 
-    .set1, .set2, .set3, .set4 {
+    .set1,
+    .set2,
+    .set3,
+    .set4 {
         width: 100%;
     }
-    
+
     .card {
         display: flex;
         flex-direction: column;
@@ -170,14 +195,14 @@
         height: auto;
         object-fit: cover;
     }
-    
+
     .card img {
         width: 16vw;
         height: auto;
         padding: 2vh 2vw 0 2vw;
         margin-left: 1vw;
     }
-    
+
     .card-detail {
         display: flex;
         flex-direction: column;
@@ -188,27 +213,28 @@
     .card-detail p {
         font-size: 1.5vw;
     }
-    
+
     .card-detail h3 {
         font-size: 2.2vw;
     }
-    
+
     .price {
         display: flex;
         flex-direction: row;
         gap: 0.1vw;
         padding-bottom: 2vh;
     }
-    
+
     .price p {
         font-size: 1.5vw;
     }
-    
+
     .price h3 {
         font-size: 2.2vw;
     }
-    
-    .set-prev, .set-next {
+
+    .set-prev,
+    .set-next {
         cursor: pointer;
         position: absolute;
         top: 50%;
@@ -218,7 +244,7 @@
         font-size: 2vw;
         border-radius: 50%;
     }
-    
+
     .set-next {
         right: 0;
         margin-right: 0.8vw;
@@ -233,32 +259,41 @@
         flex-direction: column;
         gap: 2vh;
     }
-    
-    .furniture-part, .decoration-part, .workspace-part, .outdoor-part {
+
+    .furniture-part,
+    .decoration-part,
+    .workspace-part,
+    .outdoor-part {
         width: 88%;
         display: flex;
         flex-direction: column;
         gap: 1vh;
         margin: 1.5vh 0 0 6vw;
     }
-    
-    .furniture-part h2, .decoration-part h2, .workspace-part h2, .outdoor-part h2 {
+
+    .furniture-part h2,
+    .decoration-part h2,
+    .workspace-part h2,
+    .outdoor-part h2 {
         font-size: 4vw;
         margin-left: 0.2vw;
     }
-    
+
     .cards {
         width: 100%;
         position: relative;
         margin: 0 0 0.1vh 0.5vw;
     }
 
-    .set1, .set2, .set3, .set4 {
+    .set1,
+    .set2,
+    .set3,
+    .set4 {
         width: 100%;
         display: none;
         gap: 0 0.2vw;
     }
-    
+
     .card {
         display: flex;
         flex-direction: column;
@@ -268,13 +303,13 @@
         height: auto;
         object-fit: cover;
     }
-    
+
     .card img {
         width: 16vw;
         height: auto;
         padding: 1vh 0 0 1vw;
     }
-    
+
     .card-detail {
         display: flex;
         flex-direction: column;
@@ -285,27 +320,28 @@
     .card-detail p {
         font-size: 1.5vw;
     }
-    
+
     .card-detail h3 {
         font-size: 2.2vw;
     }
-    
+
     .price {
         display: flex;
         flex-direction: row;
         gap: 0.1vw;
         padding-bottom: 1vh;
     }
-    
+
     .price p {
         font-size: 1.5vw;
     }
-    
+
     .price h3 {
         font-size: 2.2vw;
     }
-    
-    .set-prev, .set-next {
+
+    .set-prev,
+    .set-next {
         cursor: pointer;
         position: absolute;
         top: 50%;
@@ -315,7 +351,7 @@
         font-size: 2vw;
         border-radius: 50%;
     }
-    
+
     .set-next {
         right: 0;
         margin-right: 0.8vw;

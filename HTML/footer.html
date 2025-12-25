@@ -1,39 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Footer</title>
+    <title id="title-footer"></title>
     <link rel="stylesheet" href="../CSS/footer.css">
 </head>
+
 <body>
     <footer class="footer-body">
         <div class="top-part">
             <div class="footer-logo-part">
-                <a href="home.html"><img src="../Asset/Logo-ILKEA.png" alt="ILKEA" title="ILKEA"></a>
+                <a href="home.html"><img src="../Asset/Images/Common/Logo-ILKEA.png" alt="ILKEA" title="ILKEA"></a>
             </div>
             <ul class="footer-navigation-part">
-                <li><a href="home.html" target="_top">| HOME</a></li>
-                <li><a href="gallery.html" target="_top">| GALLERY</a></li>
-                <li><a href="member.html" target="_top">| MEMBER</a></li>
-                <li><a href="aboutUs.html" target="_top">| ABOUT US</a></li>
-                <li><a href="contact.html" target="_top">| CONTACT US</a></li>
+                <li><a href="home.html" target="_top" id="home"></a></li>
+                <li><a href="gallery.html" target="_top" id="gallery"></a></li>
+                <li><a href="member.html" target="_top" id="member"></a></li>
+                <li><a href="aboutUs.html" target="_top" id="about-us"></a></li>
+                <li><a href="contact.html" target="_top" id="contact-us"></a></li>
             </ul>
             <div class="social-part">
-                <p>Find Us On</p>
+                <p id="find-us-on"></p>
                 <div class="social-icon">
-                    <img src="../Asset/ig.ico" alt="Instagram" title="Instagram">
-                    <img src="../Asset/fb.ico" alt="Facebook" title="Facebook">
-                    <img src="../Asset/x.ico" alt="X" title="X">
-                    <img src="../Asset/tok2.ico" alt="TikTok" title="TikTok">
+                    <img src="../Asset/Icons/ig.ico" alt="Instagram" title="Instagram">
+                    <img src="../Asset/Icons/fb.ico" alt="Facebook" title="Facebook">
                 </div>
             </div>
         </div>
         <div class="bottom-part">
-           <p>© ILKEA 1999 - 2023. All Right Reserved</p>
-           <p>Cookie Settings</p>
-           <p>Privacy & Cookie Statement</p>
+            <p>© ILKEA <span id="current-year"></span>. All Rights Reserved</p>
         </div>
     </footer>
+
+    <script src="../JS/template.js"></script>
 </body>
+
 </html>
